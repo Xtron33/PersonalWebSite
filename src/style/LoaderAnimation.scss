@@ -1,0 +1,66 @@
+@import "Main";
+
+
+
+.Loader{
+  position: absolute;
+  display: flex;
+  top:0;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: clip;
+  background-color: black;
+  z-index: 10;
+  animation: scalingTransitionLoader 1s linear 7s forwards;
+
+  &-Circle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(0px 0px 7px black) drop-shadow(0px 0px 7px black);
+    animation: rotationCirle 30s linear infinite, scalingTransition 4s ease-in-out 5s forwards;
+  }
+
+  &-Char{
+
+    color: $green;
+    font-weight: 900;
+    font-family: Nafta;
+    position: absolute;
+    transform-origin: 0 100px;
+
+  }
+}
+
+@keyframes rotationCirle {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+
+}
+@keyframes scalingTransition {
+  0%{
+  scale: 1;
+
+}
+  100%{
+    scale: 450;
+
+  }
+}
+@keyframes scalingTransitionLoader {
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}

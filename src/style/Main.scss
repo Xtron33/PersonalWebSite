@@ -1,0 +1,262 @@
+@font-face {
+  font-family: WILDWORLD;
+  src: url("../Assets/fonts/WILDWORLD-FONT.woff2") format("woff2"),
+  url("../Assets/fonts/WILDWORLD-FONT.woff") format("woff");
+}
+@font-face {
+  font-family: Projekt Blackbird;
+  src: url("../Assets/fonts/projekt_blackbird_v2-webfont.woff2") format("woff2"),
+  url("../Assets/fonts/projekt_blackbird_v2-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: Nafta Light;
+  src: url("../Assets/fonts/NaftaLight-Regular.woff2") format("woff2"),
+  url("../Assets/fonts/NaftaLight-Regular.woff") format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+@import "animation";
+
+$green: #70FF00;
+
+
+
+
+.c_g{
+  color:$green;
+}
+
+body{
+  margin: 0;
+  background-color: black;
+}
+.background-container {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+
+  .background {
+
+    background: url("../Assets/bg.png");
+    animation: background-animation 5s steps(6) infinite;
+    transform: scale(1.5) rotate(-4.5deg);
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    opacity: 30%;
+
+  }
+}
+
+.noise-effect{
+  position: fixed;
+  pointer-events: none;
+  animation: noise 1s steps(6) infinite;
+  background: url("../Assets/movie.png");
+  filter: contrast(5) brightness(2);
+  scale: (2.5);
+  height: 200%;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  opacity: .7;
+  z-index: 100000000000000000000000000000000000000000000000000;
+
+}
+
+
+
+header{
+  position: absolute;
+  color: white;
+  z-index: 5;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .logo-container{
+      margin-left: 100px;
+      font-size: 36px;
+      letter-spacing: 0.05em;
+    }
+    .main-navigation-container{
+      display: flex;
+      margin-left: auto;
+      margin-right: 100px;
+      gap: 50px;
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+main{
+  position: relative;
+  top: 10vh;
+
+  .h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+  }
+  .h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+  }
+
+  .container-hello{
+    height: 80vh;
+    transform: translateY(10vh);
+    &-vertical{
+      margin-left: 200px;
+      width: 1000px;
+    }
+    &-namebox{
+      margin: auto;
+      display: flex;
+      &-border{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+
+        &-line{
+          border: 1px solid #FFFFFF;
+          height: 450px;
+          margin: 10px;
+        }
+      }
+      &-hi-im{
+        margin-top: 45px;
+        font-family: WILDWORLD;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 128px;
+        letter-spacing: 0.05em;
+
+        color: #FFFFFF;
+      }
+      &-name{
+        position: absolute;
+        margin-top: -190px;
+        margin-left: -110px;
+        width: 1000px;
+        height: 700px;
+        background: url("../Assets/Animation/Name/nameAnimation.png");
+        animation: name-animation 7s steps(1);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        background-blend-mode: difference;
+        mix-blend-mode: difference;
+      }
+
+      .arrow50{
+        margin-left: 30px;
+        margin-top: -20px;
+        position: absolute;
+        width: 500px;
+        height: 120px;
+        background: url("../Assets/Animation/Arrow50/arrow50.png");
+        animation: arrow50 1.5s steps(23);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        background-blend-mode: difference;
+        mix-blend-mode: difference;
+      }
+    }
+    &-professionbox{
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      &-border{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        margin-top: -15px;
+        &-line{
+          border: 1px solid #FFFFFF;
+          height: 90px;
+          margin: 10px;
+        }
+      }
+      &-textbox{
+        font-family: WILDWORLD;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 110.1%;
+        text-align: right;
+        letter-spacing: 0.05em;
+        color: white;
+
+        .brush-stroke-45{
+          position: relative;
+          background: url("../Assets/PaintBrush/45.png");
+          width: 622px;
+          height: 60px;
+          margin-right: -90px;
+          margin-top: -40px;
+          mix-blend-mode: difference;
+        }
+      }
+    }
+    &-imagebox{
+      position: absolute;
+      top: -80px;
+      right: 200px;
+
+      .image-h2{
+        width: 400px;
+        position: absolute;
+        right: 100px;
+      }
+
+      &-image{
+        position: absolute;
+        right: -75px;
+        top: -340px;
+        background: url("../Assets/Animation/Photo/photoAnimate.png");
+        width: 1290px;
+        height: 1749px;
+        animation: photo-animation  3s steps(1);
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        background-blend-mode: difference;
+        transform: scale(0.6) rotate(-2.62deg);
+
+      }
+      &-border{
+        position: absolute;
+        right: 195px;
+        top: 40px;
+        width: 0px;
+        border: 1px solid #FFFFFF;
+        height: 900px;
+        margin: 10px;
+      }
+    }
+  }
+
+}
+
