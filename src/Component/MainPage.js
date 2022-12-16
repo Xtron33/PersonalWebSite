@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import '../style/Main.scss'
 import {Header} from "./header"
+
 
 const Arrow50 = () => {
     return(
@@ -20,15 +21,14 @@ const PhotoBox = () => {
 }
 
 
+
 export const Main = () =>{
     const [flagArrow50, setFlagArrow50] = useState(false)
-    setTimeout(() => setFlagArrow50(true),2000)
+    setTimeout(() => setFlagArrow50(true),1000)
     const [flagNameBox, setFlagNameBox] = useState(false)
-    setTimeout(() => setFlagNameBox(true),3500)
+    setTimeout(() => setFlagNameBox(true),2000)
     const [photoFlag, setPhotoFlag] = useState(false)
-    setTimeout(() => setPhotoFlag(true),8500)
-
-
+    setTimeout(() => setPhotoFlag(true),4300)
 
 
     return(
@@ -39,29 +39,32 @@ export const Main = () =>{
             <div className="container-hello-vertical">
                 <div className="container-hello-namebox">
                     <div className="container-hello-namebox-border">
-                        <div className="h1">
-                            <span >&lt;</span>
-                            <span className="c_g">h1</span>
-                            <span>&gt;</span>
-                        </div>
-                        <div className="container-hello-namebox-border-line"></div>
-                        <div className="h1">
-                            <span >&lt;/</span>
-                            <span className="c_g">h1</span>
-                            <span>&gt;</span>
+                        <div className="container-hello-namebox-border-animation">
+                            <div className="h1">
+                                <span >&lt;</span>
+                                <span className="c_g">h1</span>
+                                <span>&gt;</span>
+                            </div>
+                            <div className="container-hello-namebox-border-line"></div>
+                            <div className="h1">
+                                <span >&lt;/</span>
+                                <span className="c_g">h1</span>
+                                <span>&gt;</span>
+                            </div>
                         </div>
                     </div>
                     <div>
                         {flagArrow50 ? <Arrow50/> : <></>}
-                        <div className="container-hello-namebox-hi-im">HI I AM</div>
+                        <div className="container-hello-namebox-hi-im"><span className="container-hello-namebox-hi-im-animation">HI I AM</span></div>
                         {flagNameBox ? <NameBox/> : <></>}
                     </div>
                 </div>
                 <div className="container-hello-professionbox">
                     <div className="container-hello-professionbox-textbox">
-                        <div>FrontEnd Developer<br/>UX/UI Designer</div>
-                        <div className="brush-stroke-45"></div>
+                        <div className="container-hello-professionbox-textbox-animation">FrontEnd Developer<br/>UX/UI Designer</div>
+
                     </div>
+                    <div className="brush-stroke-45"></div>
                     <div className="container-hello-professionbox-border">
                         <div className="h2">
                             <span >&lt;</span>
@@ -79,14 +82,17 @@ export const Main = () =>{
                 </div>
             </div>
             <div className="container-hello-imagebox">
-                <div className="h2 image-h2">
-                    <span >&lt;</span>
-                    <span className="c_g">img src="./xtron.jpg"</span>
-                    <span>/&gt;</span>
+                <div style={{overflow: "hidden", right: "100px", position: "absolute", height: "50px", width: "400px"}}>
+                    <div className="h2 image-h2">
+                        <span >&lt;</span>
+                        <span className="c_g">img src="./xtron.jpg"</span>
+                        <span>/&gt;</span>
+                    </div>
                 </div>
                 {photoFlag ? <PhotoBox/> : <></>}
                 <div className="container-hello-imagebox-border"></div>
             </div>
+            <div className="container-hello-scroll-down"><span className="container-hello-scroll-down-animation">SCROLL DOWN</span></div>
         </div>
 
     </main>

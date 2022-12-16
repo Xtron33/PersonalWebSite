@@ -56,34 +56,88 @@
 @keyframes name-animation {
   $x: 0px; $y: 0px;
 
-    @for $i from 0 through 99{
+    @for $i from 0 through 89{
       #{$i + 1%} {
 
       background-position: $x $y;
-        $x: $x - 1000px;
-        @if $x < -8000px {
-          $x: -1px;
-          $y: $y - 700px;
+        $x: $x - 500px;
+        @if $x < -14500px {
+          $x: 0px;
+          $y: $y - 350px;
         }
     }
     }
+  100%{
+    background-position: -14500px -700px;
+  }
 
   }
 @keyframes photo-animation {
-  $x: 0px; $y: 0px;
+  $x: -1px;
 
-  @for $i from 0 through 43{
+  @for $i from 0 through 36{
     #{$i + 1%} {
 
-      background-position: $x $y;
-      $x: $x - 1290px;
-      @if $x < -15480px {
-        $x: -1px;
-        $y: $y - 1749px;
-      }
+      background-position-x: $x;
+      $x: $x - 487px;
     }
   }
   100%{
-    background-position: -10320px -5247px;
+    background-position-x: -17533px;
+  }
+}
+
+@keyframes left-swipe-animation {
+  from{margin-left: -200%}
+  to{margin-left: 0}
+}
+
+@keyframes line-wipe-down {
+  from{height: 0; border: 0px solid #FFFFFF}
+  to{height: 450px; border: 1px solid #FFFFFF}
+
+}
+
+@keyframes background-line-wipe-left {
+  $x: 0px;
+
+  @for $i from 0 through 5{
+    #{$i + 1%} {
+
+      background-position-x: $x;
+      $x: $x - 500px;
+    }
+  }
+  100%{
+    background-position-x: -2500px;
+  }
+}
+
+@keyframes right-swipe-animation {
+  from{margin-right: -200%}
+  to{margin-right: 0}
+}
+@keyframes up-swipe-animation {
+  from{margin-top: -50%}
+  to{margin-top: 0}
+
+}
+@keyframes right-swipe-animation-absolute {
+  from{right: 400px}
+  to{right: 797px}
+}
+
+@keyframes line-wipe-down-image {
+  from{height: 0; border: 0px solid #FFFFFF}
+  to{height: 900px;border: 1px solid #FFFFFF}
+
+}
+
+@keyframes scroll-down {
+  0%,10%,20%,30%{
+    margin-top: 0px;
+  }
+  5%,15%,25%{
+    margin-top: 25px;
   }
 }

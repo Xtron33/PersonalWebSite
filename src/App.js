@@ -4,6 +4,8 @@ import './style/Main.scss'
 import {Loader} from "./Component/Loader"
 import {Main} from "./Component/MainPage"
 
+
+
 const App = () => {
 
     const [isLoading, setIsLoading] = useState(true);

@@ -15,7 +15,7 @@
   background-color: black;
   z-index: 10;
   animation: scalingTransitionLoader 1s linear 7s forwards;
-
+  animation-timing-function: cubic-bezier(.08,1.02,.23,.97);
   &-Circle{
     position: absolute;
     display: flex;

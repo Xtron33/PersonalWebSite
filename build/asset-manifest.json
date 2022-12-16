@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.d1bbb06c.css",
-    "main.js": "/static/js/main.8ba65427.js",
+    "main.css": "/static/css/main.2ee6939b.css",
+    "main.js": "/static/js/main.6abc334a.js",
     "static/js/787.b3d79b74.chunk.js": "/static/js/787.b3d79b74.chunk.js",
     "static/media/bg.png": "/static/media/bg.25ba9e1ab985a80d0a35.png",
-    "static/media/photoAnimate.png": "/static/media/photoAnimate.a5ab075a8ce932fb1166.png",
-    "static/media/nameAnimation.png": "/static/media/nameAnimation.ae725bc399573c7c678d.png",
+    "static/media/photoAnimate.png": "/static/media/photoAnimate.332ed32a5919cfcff89f.png",
+    "static/media/nameAnimation.png": "/static/media/nameAnimation.525c6abc19ae4b950e15.png",
     "static/media/arrow50.png": "/static/media/arrow50.18c578de18d6eac88b6f.png",
+    "static/media/NaftaLight-Regular.woff": "/static/media/NaftaLight-Regular.d0f8e304bfb3a73a42c2.woff",
+    "static/media/NaftaLight-Regular.woff2": "/static/media/NaftaLight-Regular.c879f0b5a8e2a8b46668.woff2",
     "static/media/projekt_blackbird_v2-webfont.woff": "/static/media/projekt_blackbird_v2-webfont.22d9137ca1b03c3d0812.woff",
     "static/media/projekt_blackbird_v2-webfont.woff2": "/static/media/projekt_blackbird_v2-webfont.88eca4e134fd195954a7.woff2",
     "static/media/45.png": "/static/media/45.bcc62d4e031c6bcf8b06.png",
@@ -14,12 +16,12 @@
     "static/media/WILDWORLD-FONT.woff": "/static/media/WILDWORLD-FONT.129f478d3a68fbc97555.woff",
     "static/media/WILDWORLD-FONT.woff2": "/static/media/WILDWORLD-FONT.a254757e1f44e2a41af0.woff2",
     "index.html": "/index.html",
-    "main.d1bbb06c.css.map": "/static/css/main.d1bbb06c.css.map",
-    "main.8ba65427.js.map": "/static/js/main.8ba65427.js.map",
+    "main.2ee6939b.css.map": "/static/css/main.2ee6939b.css.map",
+    "main.6abc334a.js.map": "/static/js/main.6abc334a.js.map",
     "787.b3d79b74.chunk.js.map": "/static/js/787.b3d79b74.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1bbb06c.css",
-    "static/js/main.8ba65427.js"
+    "static/css/main.2ee6939b.css",
+    "static/js/main.6abc334a.js"
   ]
 }

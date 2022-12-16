@@ -78,6 +78,8 @@ header{
   height: 10vh;
   width: 100vw;
   position: fixed;
+  animation: up-swipe-animation 1s ease-in-out forwards;
+  animation-timing-function: cubic-bezier(.03,.83,.87,.99);
   nav{
     display: flex;
     align-items: center;
@@ -87,6 +89,12 @@ header{
       margin-left: 100px;
       font-size: 36px;
       letter-spacing: 0.05em;
+      display: inline-flex;
+      gap: 0px;
+      transition: gap 0.3s ease-in-out;
+      &:hover{
+        gap: 15px
+      }
     }
     .main-navigation-container{
       display: flex;
@@ -96,6 +104,14 @@ header{
       font-weight: 600;
       font-size: 24px;
       letter-spacing: 0.05em;
+      &-hover{
+        gap: 0px;
+        display: flex;
+        transition: gap 0.3s ease-in-out;
+      }
+      &-hover:hover{
+        gap: 15px;
+      }
     }
   }
 }
@@ -139,34 +155,51 @@ main{
         align-items: center;
         width: 100px;
 
+        &-animation{
+          animation: left-swipe-animation 0.3s ease-in-out forwards;
+          animation-timing-function: cubic-bezier(.2,.8,.61,.97);
+          width: 1px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
         &-line{
           border: 1px solid #FFFFFF;
-          height: 450px;
           margin: 10px;
+          height: 0;
+          animation: line-wipe-down 2s ease-in-out forwards 0.5s;
+          animation-timing-function: cubic-bezier(.2,.8,.61,.97);
         }
       }
       &-hi-im{
         margin-top: 45px;
         font-family: WILDWORLD;
+
         font-style: normal;
         font-weight: 700;
         font-size: 128px;
         letter-spacing: 0.05em;
-
+        overflow: hidden;
         color: #FFFFFF;
+        &-animation{
+          margin-left: -200%;
+          animation: left-swipe-animation 1s ease-in-out forwards 0.5s;
+          animation-timing-function: cubic-bezier(.2,.8,.61,.97);
+        }
       }
       &-name{
         position: absolute;
-        margin-top: -190px;
-        margin-left: -110px;
-        width: 1000px;
-        height: 700px;
+        margin-top: -25px;
+        margin-left: 100px;
+        width: 500px;
+        height: 350px;
         background: url("../Assets/Animation/Name/nameAnimation.png");
-        animation: name-animation 7s steps(1);
+        animation: name-animation 2.5s steps(1);
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         background-blend-mode: difference;
         mix-blend-mode: difference;
+        scale: 1.5;
       }
 
       .arrow50{
@@ -188,12 +221,17 @@ main{
       display: flex;
       align-items: center;
       justify-content: right;
+      overflow: hidden;
+      height: 200px;
       &-border{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100px;
         margin-top: -15px;
+        margin-right: -200%;
+        animation: right-swipe-animation 0.3s ease-in-out forwards 3s;
+        animation-timing-function: cubic-bezier(.2,.8,.61,.97);
         &-line{
           border: 1px solid #FFFFFF;
           height: 90px;
@@ -209,41 +247,54 @@ main{
         text-align: right;
         letter-spacing: 0.05em;
         color: white;
+        overflow: hidden;
 
-        .brush-stroke-45{
-          position: relative;
-          background: url("../Assets/PaintBrush/45.png");
-          width: 622px;
-          height: 60px;
-          margin-right: -90px;
-          margin-top: -40px;
-          mix-blend-mode: difference;
+        &-animation{
+          margin-right: -200%;
+          animation: right-swipe-animation 0.7s ease-in-out forwards 3.5s;
+          animation-timing-function: cubic-bezier(.2,.8,.61,.97);
         }
+
+      }
+      .brush-stroke-45{
+        position: absolute;
+        background: url("../Assets/Animation/Paint45/45.png");
+        width: 500px;
+        height: 150px;
+        mix-blend-mode: difference;
+
+        float: right;
+        animation: background-line-wipe-left 0.6s forwards 4.2s;
+        scale: 1.4;
+        transform: translateX(-50px);
       }
     }
     &-imagebox{
       position: absolute;
       top: -80px;
       right: 200px;
-
+      z-index: -1;
       .image-h2{
         width: 400px;
         position: absolute;
         right: 100px;
+        margin-right: -200%;
+        animation: right-swipe-animation-absolute 0.5s ease-in-out forwards 3.5s;
+        animation-timing-function: cubic-bezier(.2,.8,.61,.97);
       }
 
       &-image{
         position: absolute;
-        right: -75px;
-        top: -340px;
+        right: 330px;
+        top: 200px;
         background: url("../Assets/Animation/Photo/photoAnimate.png");
-        width: 1290px;
-        height: 1749px;
-        animation: photo-animation  3s steps(1);
+        width: 485px;
+        height: 656px;
+        animation: photo-animation  5s steps(1);
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         background-blend-mode: difference;
-        transform: scale(0.6) rotate(-2.62deg);
+        transform: scale(1.45) rotate(-2.62deg);
 
       }
       &-border{
@@ -251,9 +302,28 @@ main{
         right: 195px;
         top: 40px;
         width: 0px;
-        border: 1px solid #FFFFFF;
-        height: 900px;
+        border: 0px solid #FFFFFF;
+        height: 0px;
         margin: 10px;
+        animation: line-wipe-down-image 3s ease-in-out forwards ;
+        animation-timing-function: cubic-bezier(.2,.8,.61,.97);
+      }
+    }
+    &-scroll-down{
+      font-family: Projekt Blackbird;
+      color: white;
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: 0.05em;
+      width: fit-content;
+      margin-left: 25%;
+      overflow: hidden;
+      display: flex;
+      animation: scroll-down 10s ease-in-out 5s infinite;
+      margin-top: 0;
+      &-animation{
+        margin-top: -50%;
+        animation: up-swipe-animation 1s ease-in-out forwards 5s;
       }
     }
   }
