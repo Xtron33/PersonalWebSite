@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react';
 import '../style/Main.scss'
-import {Header} from "./header"
+
 
 
 const Arrow50 = () => {
@@ -33,8 +33,8 @@ export const Main = () =>{
 
     return(
 <>
-    <Header/>
-    <main>
+
+
         <div className="container-hello">
             <div className="container-hello-vertical">
                 <div className="container-hello-namebox">
@@ -95,7 +95,7 @@ export const Main = () =>{
             <div className="container-hello-scroll-down"><span className="container-hello-scroll-down-animation">SCROLL DOWN</span></div>
         </div>
 
-    </main>
+    
 </>
     )
 }

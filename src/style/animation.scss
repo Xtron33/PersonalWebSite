@@ -141,3 +141,52 @@
     margin-top: 25px;
   }
 }
+
+@keyframes sixnine-animation {
+  from{background-position-x: 0px}
+  to{background-position-x: -7000px}
+
+}
+
+@keyframes arrow61-animation {
+  from{background-position-x: 0px}
+  to{background-position-x: -3500px}
+}
+
+@keyframes about-animation {
+  from{background-position-x: 0px}
+  to{background-position-x: -10000px}
+}
+
+@keyframes about-text-animation {
+  from{width: 0px}
+  to{width: 285px}
+}
+
+@keyframes about-subtext-animation {
+  from{height: 0px}
+  to{height: 65px}
+}
+
+@keyframes about-thirdtext-animation {
+  from{height: 0px}
+  to{height: 450px}
+}
+@keyframes about-thirdline-animation {
+  from{height: 0px; opacity: 0}
+  to{height: 419px; opacity: 1}
+}
+@keyframes about-thirdborder-animation {
+  from{margin-left: -65px}
+  to{margin-left: 0}
+}
+
+@keyframes about-h2 {
+  from{height: 0}
+  to{height: 40px}
+}
+
+@keyframes sculpter {
+  from{filter: brightness(0.1); opacity: 0}
+  to{filter: brightness(1);opacity: 1}
+}
