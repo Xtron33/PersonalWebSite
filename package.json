@@ -2,6 +2,7 @@
   "name": "dev",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Xtron33.github.io/PersonalWebSite",
   "dependencies": {
     "@splinetool/react-spline": "^2.2.5",
     "@splinetool/runtime": "^0.9.159",
@@ -14,10 +15,12 @@
     "react-dom": "^18.2.0",
     "react-player": "^2.11.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.56.2",
+    "sass": "^1.57.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

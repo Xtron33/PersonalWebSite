@@ -6,8 +6,6 @@ import Email from "../Assets/icon/mail.png"
 import VK from "../Assets/icon/vk.png"
 import Discord from "../Assets/icon/discord.png"
 
-export const Spline = React.lazy(() => import('@splinetool/react-spline') )
-
 export const Contact = () => {
 
 
