@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PersonalWebSite/static/css/main.44e9554f.css",
+    "main.css": "/PersonalWebSite/static/css/main.fc33e285.css",
     "main.js": "/PersonalWebSite/static/js/main.5811287b.js",
     "static/js/787.b3d79b74.chunk.js": "/PersonalWebSite/static/js/787.b3d79b74.chunk.js",
     "static/media/bg.png": "/PersonalWebSite/static/media/bg.25ba9e1ab985a80d0a35.png",
@@ -29,12 +29,12 @@
     "static/media/WILDWORLD-FONT.woff": "/PersonalWebSite/static/media/WILDWORLD-FONT.129f478d3a68fbc97555.woff",
     "static/media/WILDWORLD-FONT.woff2": "/PersonalWebSite/static/media/WILDWORLD-FONT.a254757e1f44e2a41af0.woff2",
     "index.html": "/PersonalWebSite/index.html",
-    "main.44e9554f.css.map": "/PersonalWebSite/static/css/main.44e9554f.css.map",
+    "main.fc33e285.css.map": "/PersonalWebSite/static/css/main.fc33e285.css.map",
     "main.5811287b.js.map": "/PersonalWebSite/static/js/main.5811287b.js.map",
     "787.b3d79b74.chunk.js.map": "/PersonalWebSite/static/js/787.b3d79b74.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44e9554f.css",
+    "static/css/main.fc33e285.css",
     "static/js/main.5811287b.js"
   ]
 }
