@@ -53,7 +53,7 @@ main{
         margin-right: auto;
         overflow: hidden;
         white-space: nowrap;
-        animation: about-h2 0.8s ease-in-out forwards;
+        animation: about-h2 0.8s ease-in-out forwards 1s;
         animation-timing-function: cubic-bezier(.17,.86,.36,.94);
         &-text{
 
@@ -66,7 +66,7 @@ main{
           font-size: 40px;
           letter-spacing: 0.05em;
           color: #FFFFFF;
-          animation: about-text-animation 1s forwards ease-in-out 1s;
+          animation: about-text-animation 1s forwards ease-in-out 1.8s;
           animation-timing-function: cubic-bezier(.17,.86,.36,.94);
         }
         .h2{
@@ -97,6 +97,19 @@ main{
 
         .h2{
           font-size: 24px;
+        }
+
+        @media (max-width: 2220px) {
+          scale: 0.9;
+          margin-left: -20px;
+        }
+        @media (max-width: 2000px) {
+          scale: 0.7;
+          margin-left: -120px;
+        }
+        @media (max-width: 1600px) {
+          scale: 0.6;
+
         }
       }
 
@@ -131,7 +144,7 @@ main{
         &-text{
           height: 0;
           overflow: hidden;
-          width: 55%;
+          width: 70%;
           margin-top: 20px;
           font-family: Projekt Blackbird;
           font-style: normal;
@@ -148,6 +161,22 @@ main{
             margin-bottom: 40px;
           }
         }
+
+        @media (max-width: 2220px) {
+          scale: 0.9;
+          margin-left: -15px;
+          margin-top: -20px;
+        }
+        @media (max-width: 2000px) {
+          scale: 0.7;
+          margin-left: -120px;
+          margin-top: -50px;
+        }
+        @media (max-width: 1600px) {
+          scale: 0.6;
+          margin-left: -120px;
+          margin-top: -80px;
+        }
       }
       &-scrolldown{
         position: absolute;
@@ -157,6 +186,19 @@ main{
         height: 500px;
         scale: .7;
         animation: arrow61-animation 0.7s steps(10) forwards 5s;
+
+        @media (max-width: 2220px) {
+          scale: .7;
+
+        }
+        @media (max-width: 2000px) {
+          scale: .6;
+
+        }
+        @media (max-width: 1600px) {
+          scale: .5;
+
+        }
       }
 
     }
@@ -174,6 +216,18 @@ main{
         mix-blend-mode: difference;
         animation: about-animation 1s steps(20) forwards 5s;
 
+        @media (max-width: 2220px) {
+          scale: 1.2;
+
+        }
+        @media (max-width: 2000px) {
+          scale: 1;
+
+        }
+        @media (max-width: 1600px) {
+          scale: 0.8;
+
+        }
       }
 
       &-sculpture{

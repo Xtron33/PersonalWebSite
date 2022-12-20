@@ -32,6 +32,7 @@ header{
       display: inline-flex;
       gap: 0px;
       transition: gap 0.3s ease-in-out;
+      cursor: pointer;
       &:hover{
         gap: 15px
       }
@@ -44,6 +45,7 @@ header{
       font-weight: 600;
       font-size: 24px;
       letter-spacing: 0.05em;
+      cursor: pointer;
       &-hover{
         gap: 0px;
         display: flex;

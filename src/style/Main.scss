@@ -20,7 +20,8 @@
 @import "animation";
 @import "header";
 @import "AboutPage";
-
+@import "WorksPage";
+@import "Contact";
 
 $green: #70FF00;
 
@@ -183,6 +184,16 @@ main{
         background-blend-mode: difference;
         mix-blend-mode: difference;
       }
+      @media (max-width: 2220px) {
+        scale: 0.9;
+      }
+      @media (max-width: 2000px) {
+        scale: 0.8;
+      }
+      @media (max-width: 1600px) {
+        scale: 0.6;
+        margin-left: -300px;
+      }
     }
     &-professionbox{
       margin-top: 30px;
@@ -236,6 +247,17 @@ main{
         scale: 1.4;
         transform: translateX(-50px);
       }
+      @media (max-width: 2220px) {
+        scale: 0.9;
+      }
+      @media (max-width: 2000px) {
+        scale: 0.8;
+        margin-top: -50px;
+      }
+      @media (max-width: 1600px) {
+        scale: 0.6;
+
+      }
     }
     &-imagebox{
       position: absolute;
@@ -275,6 +297,18 @@ main{
         margin: 10px;
         animation: line-wipe-down-image 3s ease-in-out forwards 4s;
         animation-timing-function: cubic-bezier(.2,.8,.61,.97);
+      }
+
+      @media (max-width: 2220px) {
+        scale: 0.9;
+      }
+      @media (max-width: 2000px) {
+        scale: 0.8;
+        right: 50px;
+      }
+      @media (max-width: 1600px) {
+        scale: 0.6;
+        right: 10px;
       }
     }
     &-scroll-down{

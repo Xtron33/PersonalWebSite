@@ -7,6 +7,71 @@
   }
 }
 
+@keyframes flicker {
+  0% {
+    opacity: 0.27861;
+  }
+  5% {
+    opacity: 0.34769;
+  }
+  10% {
+    opacity: 0.23604;
+  }
+  15% {
+    opacity: 0.90626;
+  }
+  20% {
+    opacity: 0.18128;
+  }
+  25% {
+    opacity: 0.83891;
+  }
+  30% {
+    opacity: 0.65583;
+  }
+  35% {
+    opacity: 0.67807;
+  }
+  40% {
+    opacity: 0.26559;
+  }
+  45% {
+    opacity: 0.84693;
+  }
+  50% {
+    opacity: 0.96019;
+  }
+  55% {
+    opacity: 0.08594;
+  }
+  60% {
+    opacity: 0.20313;
+  }
+  65% {
+    opacity: 0.71988;
+  }
+  70% {
+    opacity: 0.53455;
+  }
+  75% {
+    opacity: 0.37288;
+  }
+  80% {
+    opacity: 0.71428;
+  }
+  85% {
+    opacity: 0.70419;
+  }
+  90% {
+    opacity: 0.7003;
+  }
+  95% {
+    opacity: 0.36108;
+  }
+  100% {
+    opacity: 0.24387;
+  }
+}
 
 @keyframes noise {
   0%{
@@ -189,4 +254,42 @@
 @keyframes sculpter {
   from{filter: brightness(0.1); opacity: 0}
   to{filter: brightness(1);opacity: 1}
+}
+
+@keyframes hoverWorks {
+  from{transform:rotateY(-30deg) rotateX(50deg) rotateZ(0deg)}
+  to{transform:rotateY(-30deg) rotateX(50deg) rotateZ(360deg)}
+}
+
+@keyframes works-text-animation {
+  from{width: 0px}
+  to{width: 300px}
+}
+
+@keyframes works-brush {
+  from{background-position-x: 0}
+  to{background-position-x: -7000px}
+
+}
+@keyframes works-arrow {
+  from{background-position-x: 0}
+  to{background-position-x: -7500px}
+
+}
+@keyframes works-image {
+  from{height: 0}
+  to{height: 18vh}
+}
+
+@keyframes align-rigth {
+  from{margin-left: -40%; opacity: 0}
+  to{margin-left: 3vw; opacity: 1}
+}
+@keyframes align-left {
+  from{margin-right: -40%; opacity: 0}
+  to{margin-right: 3vw; opacity: 1}
+}
+@keyframes sculpter-works {
+  from{filter: brightness(0.1); opacity: 0}
+  to{filter: brightness(0.5);opacity: 1}
 }
