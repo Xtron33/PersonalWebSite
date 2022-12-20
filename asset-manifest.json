@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/PersonalWebSite/static/css/main.44e9554f.css",
+    "main.js": "/PersonalWebSite/static/js/main.5811287b.js",
+    "static/js/787.b3d79b74.chunk.js": "/PersonalWebSite/static/js/787.b3d79b74.chunk.js",
+    "static/media/bg.png": "/PersonalWebSite/static/media/bg.25ba9e1ab985a80d0a35.png",
+    "static/media/TV.png": "/PersonalWebSite/static/media/TV.68b824a9d6ca73f19e81.png",
+    "static/media/photoAnimate.png": "/PersonalWebSite/static/media/photoAnimate.332ed32a5919cfcff89f.png",
+    "static/media/10.png": "/PersonalWebSite/static/media/10.4d3636e1009520f2d0c7.png",
+    "static/media/34.png": "/PersonalWebSite/static/media/34.64aae3abeb31b39a28a6.png",
+    "static/media/personalwebsite.png": "/PersonalWebSite/static/media/personalwebsite.524173c14352331089ff.png",
+    "static/media/06.png": "/PersonalWebSite/static/media/06.e23184e93327865dfe2e.png",
+    "static/media/boardgamebar.png": "/PersonalWebSite/static/media/boardgamebar.e92f0729340a58438e11.png",
+    "static/media/auditsafe.png": "/PersonalWebSite/static/media/auditsafe.617d873739e335050d94.png",
+    "static/media/nameAnimation.png": "/PersonalWebSite/static/media/nameAnimation.525c6abc19ae4b950e15.png",
+    "static/media/About.png": "/PersonalWebSite/static/media/About.49c16acedc74f3ee8cff.png",
+    "static/media/Arrow58.png": "/PersonalWebSite/static/media/Arrow58.c7ce1f21666ee2c1f244.png",
+    "static/media/arrow50.png": "/PersonalWebSite/static/media/arrow50.18c578de18d6eac88b6f.png",
+    "static/media/61.png": "/PersonalWebSite/static/media/61.87093f3740ebaadcf5c7.png",
+    "static/media/94.png": "/PersonalWebSite/static/media/94.8a4e473a6219e711088d.png",
+    "static/media/NaftaLight-Regular.woff": "/PersonalWebSite/static/media/NaftaLight-Regular.d0f8e304bfb3a73a42c2.woff",
+    "static/media/NaftaLight-Regular.woff2": "/PersonalWebSite/static/media/NaftaLight-Regular.c879f0b5a8e2a8b46668.woff2",
+    "static/media/PaintStroke.png": "/PersonalWebSite/static/media/PaintStroke.47c36ee1f54c3ff4b6cd.png",
+    "static/media/MoreDitails.png": "/PersonalWebSite/static/media/MoreDitails.721069ed6c8956abeb0a.png",
+    "static/media/projekt_blackbird_v2-webfont.woff": "/PersonalWebSite/static/media/projekt_blackbird_v2-webfont.22d9137ca1b03c3d0812.woff",
+    "static/media/projekt_blackbird_v2-webfont.woff2": "/PersonalWebSite/static/media/projekt_blackbird_v2-webfont.88eca4e134fd195954a7.woff2",
+    "static/media/45.png": "/PersonalWebSite/static/media/45.8e3d075e060d9402447b.png",
+    "static/media/movie.png": "/PersonalWebSite/static/media/movie.b04ce2d7077eb531c00b.png",
+    "static/media/WILDWORLD-FONT.woff": "/PersonalWebSite/static/media/WILDWORLD-FONT.129f478d3a68fbc97555.woff",
+    "static/media/WILDWORLD-FONT.woff2": "/PersonalWebSite/static/media/WILDWORLD-FONT.a254757e1f44e2a41af0.woff2",
+    "index.html": "/PersonalWebSite/index.html",
+    "main.44e9554f.css.map": "/PersonalWebSite/static/css/main.44e9554f.css.map",
+    "main.5811287b.js.map": "/PersonalWebSite/static/js/main.5811287b.js.map",
+    "787.b3d79b74.chunk.js.map": "/PersonalWebSite/static/js/787.b3d79b74.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44e9554f.css",
+    "static/js/main.5811287b.js"
+  ]
+}
