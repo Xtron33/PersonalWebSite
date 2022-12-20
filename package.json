@@ -2,7 +2,7 @@
   "name": "dev",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Xtron33.github.io/PersonalWebSite",
+  "homepage": "https://xtron33.github.io/PersonalWebSite/",
   "dependencies": {
     "@splinetool/react-spline": "^2.2.5",
     "@splinetool/runtime": "^0.9.159",
