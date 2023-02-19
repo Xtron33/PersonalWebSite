@@ -2,7 +2,6 @@
   "name": "dev",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xtron-cv.vercel.app/",
   "dependencies": {
     "@splinetool/react-spline": "^2.2.5",
     "@splinetool/runtime": "^0.9.159",
