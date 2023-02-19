@@ -40,10 +40,10 @@ main{
         font-size: 32px;
       }
       &-text{
-        width: 300px;
+        width: 0px;
         overflow: hidden;
         white-space: nowrap;
-        font-family: 'WILD WORLD';
+        font-family: WILDWORLD;
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -53,12 +53,10 @@ main{
         animation-timing-function: cubic-bezier(.17,.86,.36,.94);
       }
       .brush{
-        background-image: url("../Assets/Animation/MyWorks/PaintStroke.png");
+        background-image: url("../Assets/Animation/MyWorks/57a.png");
         height: 70px;
         width: 700px;
         position: absolute;
-        mix-blend-mode: difference;
-        animation: works-brush 0.7s steps(10) forwards 2s;
         mix-blend-mode: difference;
         scale: .75;
         translate: -50px -15px;
@@ -157,7 +155,7 @@ main{
 
             &-text{
               align-self: center;
-              font-family: 'Projekt Blackbird';
+              font-family: Projekt Blackbird;
               font-style: normal;
               font-weight: 400;
               font-size: 20px;
@@ -171,7 +169,7 @@ main{
     }
 
     &-arrow{
-      background: url("../Assets/Animation/MyWorks/Arrow58.png");
+      background: url("../Assets/Animation/MyWorks/58a.png");
       height: 319px;
       width: 500px;
       position: absolute;
@@ -179,7 +177,6 @@ main{
       translate: 0px 55vh;
       scale: .75;
       rotate: -50deg;
-      animation: works-arrow 1s steps(15) forwards 3.5s;
     }
 
     &-bg-sculpter{

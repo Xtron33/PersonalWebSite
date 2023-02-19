@@ -1,11 +1,4 @@
-@keyframes arrow50 {
-  from{
-    background-position-x: 0px;
-  }
-  to{
-    background-position-x: -11500px;
-  }
-}
+
 
 @keyframes flicker {
   0% {
@@ -118,39 +111,6 @@
   }
 }
 
-@keyframes name-animation {
-  $x: 0px; $y: 0px;
-
-    @for $i from 0 through 89{
-      #{$i + 1%} {
-
-      background-position: $x $y;
-        $x: $x - 500px;
-        @if $x < -14500px {
-          $x: 0px;
-          $y: $y - 350px;
-        }
-    }
-    }
-  100%{
-    background-position: -14500px -700px;
-  }
-
-  }
-@keyframes photo-animation {
-  $x: -1px;
-
-  @for $i from 0 through 36{
-    #{$i + 1%} {
-
-      background-position-x: $x;
-      $x: $x - 487px;
-    }
-  }
-  100%{
-    background-position-x: -17533px;
-  }
-}
 
 @keyframes left-swipe-animation {
   from{margin-left: -200%}
@@ -163,20 +123,7 @@
 
 }
 
-@keyframes background-line-wipe-left {
-  $x: 0px;
 
-  @for $i from 0 through 5{
-    #{$i + 1%} {
-
-      background-position-x: $x;
-      $x: $x - 500px;
-    }
-  }
-  100%{
-    background-position-x: -2500px;
-  }
-}
 
 @keyframes right-swipe-animation {
   from{margin-right: -200%}
@@ -207,21 +154,7 @@
   }
 }
 
-@keyframes sixnine-animation {
-  from{background-position-x: 0px}
-  to{background-position-x: -7000px}
 
-}
-
-@keyframes arrow61-animation {
-  from{background-position-x: 0px}
-  to{background-position-x: -3500px}
-}
-
-@keyframes about-animation {
-  from{background-position-x: 0px}
-  to{background-position-x: -10000px}
-}
 
 @keyframes about-text-animation {
   from{width: 0px}
@@ -266,16 +199,6 @@
   to{width: 300px}
 }
 
-@keyframes works-brush {
-  from{background-position-x: 0}
-  to{background-position-x: -7000px}
-
-}
-@keyframes works-arrow {
-  from{background-position-x: 0}
-  to{background-position-x: -7500px}
-
-}
 @keyframes works-image {
   from{height: 0}
   to{height: 18vh}

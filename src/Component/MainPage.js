@@ -28,7 +28,9 @@ export const Main = () =>{
     const [flagNameBox, setFlagNameBox] = useState(false)
     setTimeout(() => setFlagNameBox(true),2000)
     const [photoFlag, setPhotoFlag] = useState(false)
-    setTimeout(() => setPhotoFlag(true),4300)
+    setTimeout(() => setPhotoFlag(true),3000)
+    const [brushFlag, setBrushFlag] = useState(false)
+    setTimeout(() => setBrushFlag(true),4000)
 
 
     return(
@@ -64,7 +66,7 @@ export const Main = () =>{
                         <div className="container-hello-professionbox-textbox-animation">FrontEnd Developer<br/>UX/UI Designer</div>
 
                     </div>
-                    <div className="brush-stroke-45"></div>
+                    {brushFlag ? <div className="brush-stroke-45"></div> : <></>}
                     <div className="container-hello-professionbox-border">
                         <div className="h2">
                             <span >&lt;</span>

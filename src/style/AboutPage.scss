@@ -35,13 +35,11 @@ main{
 
         .brush-sixnine{
           position: absolute;
-          background: url("../Assets/Animation/94/94.png");
+          background: url("../Assets/Animation/94/94a.png");
           width: 700px;
           height: 150px;
           scale: .5;
           transform: translate(40px,35px);
-
-          animation: sixnine-animation 0.7s steps(10) forwards 2s;
           mix-blend-mode: difference;
         }
 
@@ -60,7 +58,7 @@ main{
           width: 0;
           overflow: hidden;
           white-space: nowrap;
-          font-family: 'WILD WORLD';
+          font-family: WILDWORLD;
           font-style: normal;
           font-weight: 700;
           font-size: 40px;
@@ -181,11 +179,10 @@ main{
       &-scrolldown{
         position: absolute;
         transform: translate(35vw,50vh);
-        background: url("../Assets/Animation/Arrow61/61.png");
+        background: url("../Assets/Animation/Arrow61/Arrow_61a.png");
         width: 350px;
         height: 500px;
         scale: .7;
-        animation: arrow61-animation 0.7s steps(10) forwards 5s;
 
         @media (max-width: 2220px) {
           scale: .7;
@@ -209,12 +206,11 @@ main{
       &-text{
         position: absolute;
         transform: translate(2vw,2vh);
-        background: url("../Assets/Animation/About/About.png");
+        background: url("../Assets/Animation/About/aboutA.png");
         width: 500px;
         height: 600px;
         scale: 1.5;
         mix-blend-mode: difference;
-        animation: about-animation 1s steps(20) forwards 5s;
 
         @media (max-width: 2220px) {
           scale: 1.2;

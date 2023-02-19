@@ -4,7 +4,8 @@ import PersonalWeb from "../Assets/WorksImage/personalwebsite.png"
 import AuditSafe from "../Assets/WorksImage/auditsafe.png"
 
 export const MyWorksPage = () => {
-
+    const [flagBrush, setFlagBrush] = useState(false)
+    setTimeout(() => setFlagBrush(true),2500)
 
 
     return(
@@ -23,7 +24,7 @@ export const MyWorksPage = () => {
                         <span className="c_g">h2</span>
                         <span>&gt;</span>
                     </div>
-                    <div className="brush"></div>
+                    {flagBrush ? <div className="brush"></div> :<></>}
                 </div>
                 <div className="works-container-list-container">
                     <div className="works-container-list-container-item">

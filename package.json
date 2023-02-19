@@ -2,7 +2,7 @@
   "name": "dev",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xtron33.github.io/PersonalWebSite/",
+  "homepage": "https://xtron-cv.vercel.app/",
   "dependencies": {
     "@splinetool/react-spline": "^2.2.5",
     "@splinetool/runtime": "^0.9.159",
@@ -10,6 +10,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^7.10.0",
+    "gh-pages": "^4.0.0",
     "lottie-react": "^2.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -43,8 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }

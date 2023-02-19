@@ -162,10 +162,7 @@ main{
         margin-left: 100px;
         width: 500px;
         height: 350px;
-        background: url("../Assets/Animation/Name/nameAnimation.png");
-        animation: name-animation 2.5s steps(1);
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+        background: url("../Assets/Animation/Name/nameA.png");
         background-blend-mode: difference;
         mix-blend-mode: difference;
         scale: 1.5;
@@ -177,10 +174,7 @@ main{
         position: absolute;
         width: 500px;
         height: 120px;
-        background: url("../Assets/Animation/Arrow50/arrow50.png");
-        animation: arrow50 1.5s steps(23);
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+        background: url("../Assets/Animation/Arrow50/Arrow_050a.png");
         background-blend-mode: difference;
         mix-blend-mode: difference;
       }
@@ -237,13 +231,11 @@ main{
       }
       .brush-stroke-45{
         position: absolute;
-        background: url("../Assets/Animation/Paint45/45.png");
+        background: url("../Assets/Animation/Paint45/45a.png");
         width: 500px;
         height: 150px;
         mix-blend-mode: difference;
-
         float: right;
-        animation: background-line-wipe-left 0.6s forwards 4.2s;
         scale: 1.4;
         transform: translateX(-50px);
       }
@@ -277,12 +269,9 @@ main{
         position: absolute;
         right: 330px;
         top: 200px;
-        background: url("../Assets/Animation/Photo/photoAnimate.png");
+        background: url("../Assets/Animation/Photo/photoA.png");
         width: 485px;
         height: 656px;
-        animation: photo-animation  5s steps(1);
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
         background-blend-mode: difference;
         transform: scale(1.45) rotate(-2.62deg);
 

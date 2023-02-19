@@ -2,7 +2,8 @@ import React, {useState, useRef} from 'react';
 import Sculpture10 from "../Assets/Sculpter/10.png"
 
 export const AboutPage = () => {
-
+    const [flagBrush, setFlagBrush] = useState(false)
+    setTimeout(() => setFlagBrush(true),2500)
 
     const text1 = "At the moment I’m studying information security at TSU. It was here that I decided to connect my life with front-end development after participating in a hackathon."
 
@@ -11,7 +12,7 @@ export const AboutPage = () => {
             <div className="about-container">
                 <div className="about-container-aboutme-container">
                     <div className="about-container-aboutme-container-page-name">
-                        <div className="brush-sixnine"></div>
+                        {flagBrush ? <div className="brush-sixnine"></div> : <></>}
                         <div className="h2">
                             <span >&lt;</span>
                             <span className="c_g">h2</span>
